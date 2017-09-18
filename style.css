@@ -1,20 +1,29 @@
 body{
   background-color: white;
+  background: url(image/checkered2.jpg);
   color: red;
   margin-left: 10%;
   margin-right: 10%;
   /*align-items: center;*/
 }
 
+
+.navbar{
+  font-size: 50px;
+  color: red;
+  font-weight: bolder;
+  height: 90px;
+  /*position: fixed;*/
+}
 .content{
-  background-color: black;
+  background: linear-gradient(skyblue, lightgreen);
 }
 
 .boxes{
   /*color: blue;*/
 }
 table{
-  background-color: lightblue;
+  /*background-color: lightblue;*/
 }
 
 td{
@@ -37,13 +46,14 @@ tr{
 
 
 .image-aus{
+  /*padding-top: 0px;*/
   /*background: url(http://www.iconsdb.com/icons/preview/orange/stackoverflow-6-xxl.png) center center no-repeat;*/
-  background: url(image/ausres1.png) center center no-repeat;
+  background: url(image/australia.jpg) center center no-repeat;
   /*background-size: contain;*/
   background-size: 176.2px 124.2px;
 
   width: 250px;
-  height: 250px;
+  height: 176.2px;
 
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
@@ -58,10 +68,10 @@ tr{
 }
 
 .image-china{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/china.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -73,10 +83,10 @@ tr{
 }
 
 .image-bahrain{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/bahrain.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -88,10 +98,10 @@ tr{
 }
 
 .image-russia{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/russia.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -103,10 +113,10 @@ tr{
 }
 
 .image-spain{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/spain.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -118,10 +128,10 @@ tr{
 }
 
 .image-monaco{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/monaco.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -133,10 +143,10 @@ tr{
 }
 
 .image-canada{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/canada.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -148,10 +158,10 @@ tr{
 }
 
 .image-baku{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/baku.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -163,10 +173,10 @@ tr{
 }
 
 .image-austria{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/austria.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -178,10 +188,10 @@ tr{
 }
 
 .image-uk{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/uk.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -193,10 +203,10 @@ tr{
 }
 
 .image-hungary{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/hungary.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -208,10 +218,10 @@ tr{
 }
 
 .image-belgium{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/belgium.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -223,10 +233,10 @@ tr{
 }
 
 .image-italy{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/italy.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -238,10 +248,10 @@ tr{
 }
 
 .image-singapore{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/singapore.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -253,10 +263,10 @@ tr{
 }
 
 .image-japan{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/japan.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -268,10 +278,10 @@ tr{
 }
 
 .image-malaysia{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/malaysia.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -283,10 +293,10 @@ tr{
 }
 
 .image-usa{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/usa.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -298,10 +308,10 @@ tr{
 }
 
 .image-mexico{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/mexico.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -313,10 +323,10 @@ tr{
 }
 
 .image-brazil{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/brazil.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
@@ -328,10 +338,10 @@ tr{
 }
 
 .image-uae{
-  background: url(image/aus.png) center center no-repeat;
+  background: url(image/uae.jpg) center center no-repeat;
   background-size: 176.2px 124.2px;
   width: 250px;
-  height: 250px;
+  height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
