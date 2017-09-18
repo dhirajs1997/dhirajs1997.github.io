@@ -1,0 +1,343 @@
+body{
+  background-color: white;
+  color: red;
+  margin-left: 10%;
+  margin-right: 10%;
+  /*align-items: center;*/
+}
+
+.content{
+  background-color: black;
+}
+
+.boxes{
+  /*color: blue;*/
+}
+table{
+  background-color: lightblue;
+}
+
+td{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-size: 40px;
+  /*transition: width 0.5s, height 0.75s;*/
+}
+
+td a{
+  color: red;
+  font-family: Bodoni MT;
+  text-decoration: none;
+}
+
+tr{
+  text-align: center;
+}
+
+
+.image-aus{
+  /*background: url(http://www.iconsdb.com/icons/preview/orange/stackoverflow-6-xxl.png) center center no-repeat;*/
+  background: url(image/ausres1.png) center center no-repeat;
+  /*background-size: contain;*/
+  background-size: 176.2px 124.2px;
+
+  width: 250px;
+  height: 250px;
+
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-aus:hover {
+  /*background-image: url("http://www.iconsdb.com/icons/preview/gray/stackoverflow-xxl.png");*/
+  background: url(image/ausres.png) center center no-repeat;
+  /*background-size: contain;*/
+  background-size: 176.2px 124.2px;
+}
+
+.image-china{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-china:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-bahrain{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-bahrain:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-russia{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-russia:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-spain{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-spain:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-monaco{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-monaco:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-canada{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-canada:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-baku{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-baku:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-austria{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-austria:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-uk{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-uk:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-hungary{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-hungary:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-belgium{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-belgium:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-italy{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-italy:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-singapore{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-singapore:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-japan{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-japan:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-malaysia{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-malaysia:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-usa{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-usa:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-mexico{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-mexico:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-brazil{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-brazil:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
+
+.image-uae{
+  background: url(image/aus.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.image-uae:hover {
+  background: url(image/ausres.png) center center no-repeat;
+  background-size: 176.2px 124.2px;
+}
