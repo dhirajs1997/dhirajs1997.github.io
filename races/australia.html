@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>2017 Australian GP</title>
+    <style>
+      a:hover{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    function css(selector, property, value) {
+      for (var i=0; i<document.styleSheets.length;i++) {//Loop through all styles
+          //Try add rule
+          try { document.styleSheets[i].insertRule(selector+ ' {'+property+':'+value+'}', document.styleSheets[i].cssRules.length);
+          } catch(err) {try { document.styleSheets[i].addRule(selector, property+':'+value);} catch(err) {}}//IE
+      }
+    }
+    </script>
+    <div class="navbar">
+      <div class="navbarback"></div>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../races.html">RACES</a></li>
+      </ul>
+      <br>
+      <a href="../races.html">Races</a>&nbsp/&nbsp<a href=#>Australia</a>
+    </div>
+    <div class="bigcontent">
+      HELLO WORLD!
+      <div class="boxes" onmouseover="css('.boxes', 'color', 'green')" onmouseout="css('.boxes', 'color', 'blue')">Mouseover Me!</div>
+    </div>
+  </body>
+</html>
