@@ -1,10 +1,19 @@
 body{
-  background-color: white;
-  background: url(image/checkered2.jpg);
+  background-color: #eee;
+  /*background: url(image/checkered2.jpg);*/
   color: red;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 70%;
+  margin: auto;
   /*align-items: center;*/
+}
+
+.sidebar{
+  display: block;
+  margin-left: 10%;
+  /*display: table-row;*/
+  background-color: rgba(255,00,00,0.3);
+  float: right;
+  width: 30%;
 }
 
 
@@ -15,8 +24,14 @@ body{
   height: 90px;
   /*position: fixed;*/
 }
+
+.bigcontent{
+  display: flex;
+}
 .content{
   background: linear-gradient(skyblue, lightgreen);
+  display: table;
+  /*float: none;*/
 }
 
 .boxes{
@@ -27,30 +42,36 @@ table{
 }
 
 td{
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  font-size: 40px;
   /*transition: width 0.5s, height 0.75s;*/
 }
 
 td a{
-  color: red;
+  color: #ddd;
+  font-size: 40px;
   font-family: Bodoni MT;
   text-decoration: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 tr{
   text-align: center;
 }
 
+.race{
+  display: table-row;
+}
+
+.bottom_aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
+}
 
 .image-aus{
-  /*padding-top: 0px;*/
-  /*background: url(http://www.iconsdb.com/icons/preview/orange/stackoverflow-6-xxl.png) center center no-repeat;*/
-  background: url(image/australia.jpg) center center no-repeat;
-  /*background-size: contain;*/
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  background: url(image/australia.jpg)  no-repeat;
+  background-size: cover;
 
   width: 250px;
   height: 176.2px;
@@ -61,15 +82,17 @@ tr{
 }
 
 .image-aus:hover {
-  /*background-image: url("http://www.iconsdb.com/icons/preview/gray/stackoverflow-xxl.png");*/
-  background: url(image/ausres.png) center center no-repeat;
-  /*background-size: contain;*/
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  /*background-size: cover;*/
+  background-size: cover;;
 }
 
 .image-china{
-  background: url(image/china.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/china.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -78,13 +101,16 @@ tr{
 }
 
 .image-china:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-bahrain{
-  background: url(image/bahrain.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/bahrain.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -93,13 +119,16 @@ tr{
 }
 
 .image-bahrain:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-russia{
-  background: url(image/russia.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/russia.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -108,13 +137,16 @@ tr{
 }
 
 .image-russia:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-spain{
-  background: url(image/spain.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/spain.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -123,13 +155,16 @@ tr{
 }
 
 .image-spain:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-monaco{
-  background: url(image/monaco.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/monaco.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -138,13 +173,16 @@ tr{
 }
 
 .image-monaco:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-canada{
-  background: url(image/canada.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/canada.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -153,13 +191,16 @@ tr{
 }
 
 .image-canada:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-baku{
-  background: url(image/baku.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/baku.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -168,13 +209,16 @@ tr{
 }
 
 .image-baku:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-austria{
-  background: url(image/austria.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/austria.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -183,13 +227,16 @@ tr{
 }
 
 .image-austria:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-uk{
-  background: url(image/uk.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/uk.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -198,13 +245,16 @@ tr{
 }
 
 .image-uk:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-hungary{
-  background: url(image/hungary.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/hungary.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -213,13 +263,16 @@ tr{
 }
 
 .image-hungary:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-belgium{
-  background: url(image/belgium.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/belgium.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -228,13 +281,16 @@ tr{
 }
 
 .image-belgium:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-italy{
-  background: url(image/italy.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/italy.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -243,13 +299,16 @@ tr{
 }
 
 .image-italy:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-singapore{
-  background: url(image/singapore.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/singapore.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -258,13 +317,16 @@ tr{
 }
 
 .image-singapore:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-japan{
-  background: url(image/japan.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/japan.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -273,13 +335,16 @@ tr{
 }
 
 .image-japan:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-malaysia{
-  background: url(image/malaysia.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/malaysia.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -288,13 +353,16 @@ tr{
 }
 
 .image-malaysia:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-usa{
-  background: url(image/usa.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/usa.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -303,13 +371,16 @@ tr{
 }
 
 .image-usa:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-mexico{
-  background: url(image/mexico.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/mexico.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -318,13 +389,16 @@ tr{
 }
 
 .image-mexico:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-brazil{
-  background: url(image/brazil.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/brazil.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -333,13 +407,16 @@ tr{
 }
 
 .image-brazil:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
 
 .image-uae{
-  background: url(image/uae.jpg) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  display: table-cell;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/uae.jpg) center center no-repeat;
+  background-size: cover;;
   width: 250px;
   height: 176.2px;
   -webkit-transition: all .7s ease-in-out;
@@ -348,6 +425,7 @@ tr{
 }
 
 .image-uae:hover {
-  background: url(image/ausres.png) center center no-repeat;
-  background-size: 176.2px 124.2px;
+  /*padding: 10px 10px 10px 10px;*/
+   background: url(image/ausres.png) center center no-repeat;
+  background-size: cover;;
 }
