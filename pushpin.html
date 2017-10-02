@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>pushpin</title>
   <style>
   .bigcontent ul li{
@@ -78,6 +79,19 @@
     font-size: 16px;
   }
 
+  .sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .sticky p{
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+  }
+
 
   </style>
 </head>
@@ -96,7 +110,7 @@
     <a href=#>PushpinDemo</a>
     <hr>
   </div>
-  <!-- <h1>FLAG RULES</h1>
+  <!-- <p>FLAG RULES</p>
   <div class="flagcontent">
     <br><br><br><br>
     <div class="sticky">
@@ -105,33 +119,33 @@
     </div></div> -->
     <div class="flagcontent" style="background-color: #ffff66;">
       <div class="sticky" style="background-color: #b3b300;">
-        <h1>YELLOW FLAG<span style="float: right"><a href=#>yellow link 1</a>&nbsp&nbsp&nbsp<a href=#>yellow link 2</a></span></h1><hr>
+        <p>YELLOW FLAG<span style="float: right"><a href=#>yellow link 1</a>&nbsp&nbsp&nbsp<a href=#>yellow link 2</a></span></p>
       </div>
     </div>
     <div class="flagcontent" style="background-color: #ff8080;">
       <div class="sticky" style="background-color: #bb1111;">
-        <h1>RED FLAG<span style="float: right"><a href=#>red link 1</a>&nbsp&nbsp&nbsp<a href=#>red link 2</a></span></h1><hr>
+        <p>RED FLAG<span style="float: right"><a href=#>red link 1</a>&nbsp&nbsp&nbsp<a href=#>red link 2</a></span></p>
       </div>
     </div>
     <div class="flagcontent" style="background-color: lightgreen;">
       <div class="sticky" style="background-color: green;">
-        <h1>GREEN FLAG<span style="float: right"><a href=#>green link 1</a>&nbsp&nbsp&nbsp<a href=#>green link 2</a></span></h1><hr>
+        <p>GREEN FLAG<span style="float: right"><a href=#>green link 1</a>&nbsp&nbsp&nbsp<a href=#>green link 2</a></span></p>
       </div>
     </div>
     <div class="flagcontent" style="background-color: lightblue;">
       <div class="sticky" style="background-color: #5555ff;">
-        <h1>BLUE FLAG<span style="float: right"><a href=#>blue link 1</a>&nbsp&nbsp&nbsp<a href=#>blue link 2</a></span></h1><hr>
+        <p>BLUE FLAG<span style="float: right"><a href=#>blue link 1</a>&nbsp&nbsp&nbsp<a href=#>blue link 2</a></span></p>
       </div>
     </div>
-    <div class="flagcontent" style="background-color: #ffccff; height: 300px; font-size:20px; font-family: verdana;">
-      <div class="sticky" style="font-size:30px; font-family: verdana;">
-        <h1>IT WORKS!<span style="float: right"><a href=#>it works! link 1</a>&nbsp&nbsp&nbsp<a href=#>it works! link 2</a></span></h1>
+    <div class="flagcontent" style="background-color: #ffccff; height: auto; font-size:20px; font-family: verdana;">
+      <div class="sticky" style="font-size:30px; font-family: verdana; overflow: none; height: auto;">
+        <p>IT WORKS!<span style="float: right"><a href=#>it works! link 1</a>&nbsp&nbsp&nbsp<a href=#>it works! link 2</a></span></p>
       </div>
-      <pre>It really works!
-        Implemented it.
-        Code written by myself.
-        Inspired by materialize css pushpin.
-    </pre>
+      <p>It really works!
+        <br>Implemented it.
+        <br>Code written by myself.
+        <br>Inspired by materialize css pushpin.
+    </p>
     </div>
   </body>
 </html>
