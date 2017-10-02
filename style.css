@@ -146,6 +146,35 @@ tr{
   text-align: center;
 }
 
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	.bigcontent{
+    display: block;
+	}
+
+  .content  {
+    margin-right: 20%;
+  }
+
+  .sidebar{
+    margin-left: none;
+    float: left;
+  }
+}
+
 .race{
   display: table-row;
 }
