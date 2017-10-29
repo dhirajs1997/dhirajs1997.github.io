@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio</title>
+  </head>
+  <body>
+    <div class="button">
+      <button type="button" name="button" onclick="play('cena.mp3')">CENA</button>
+    </div>
+    <div class="button">
+      <button type="button" name="button" onclick="play('sanic.m4a')">SANIC</button>
+    </div>
+    <div class="button">
+      <button type="button" name="button" onclick="play('RealAmerican.m4a')"><strong>REAL AMERICAN</strong></button>
+    </div>
+    <audio controls id="audio">
+        <source id="player" src="#" type="audio/mp3">
+          <source id="player" src="#" type="audio/m4a">
+          Please upgrade your browser
+    </audio>
+    <!-- <a id="myAnchor" href="#">TEST</a> -->
+    <script type="text/javascript">
+      function play(audio){
+        document.getElementById("player").setAttribute("src",audio);
+        document.getElementById("audio").load();
+      //  alert(audio);
+        // document.getElementById("myAnchor").setAttribute("href", audio);
+        // document.getElementById("audio").innerHTML = "TEST";
+        // document.getElementById("audio").style.visibility = "visible";
+      }
+    </script>
+  </body>
+</html>
