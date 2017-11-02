@@ -1,0 +1,58 @@
+.circle {
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   margin: 10px 10px 10px 10px;
+   background-color: black;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  .circle {
+     border-radius: 50%;
+     width: 70px;
+     height: 70px;
+     margin: 10px 10px 10px 10px;
+     background-color: black;
+  }
+
+  body{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+  *{
+    font-family: Roboto;
+    font-size: 30px;
+  }
+  body{
+    width: 60%;
+    margin: auto;
+  }
+  p{
+    text-align: center;
+  }
+  .lights{
+    height: 50%;
+    width: 100%;
+    display:flex;
+  }
+
+  #circle1{
+
+  }
+  #circle2{
+
+  }
+  #circle3{
+
+  }
+  #circle4{
+
+  }
+  #circle5{
+  }

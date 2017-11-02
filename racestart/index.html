@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Race Timer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="alert('Click on lights to start.\nOnce the 5 light go GREEN click on them to test your reaction time.\nLights will go GREEN after a random delay.\nLights will reset automatically after attempt.');">
+    <br><br><br><br><br>
+    <div id="noclick">
+    </div>
+    <div class="mainbody">
+      <div class="lights" id="lights5" onclick="start();">
+          <div class="circle" id="circle1">
+          </div>
+          <div class="circle" id="circle2">
+          </div>
+          <div class="circle" id="circle3">
+          </div>
+          <div class="circle" id="circle4">
+          </div>
+          <div class="circle" id="circle5">
+          </div>
+      </div>
+    </div>
+    <br>
+    <p id="attempts">Total attempts: 0</p>
+    <p id="time">Last attempt: null</p>
+    <p id="besttime">Best attempt: null</p>
+    <script type="text/javascript">
+    var d1;
+    var d2;
+    var d3;
+    var flag=0;
+    var attempt=0;
+    var best=9999;
+    var bestattempt;
+    var state = 0;
+
+      function start(){
+        if(state == 0){
+        resettimer();
+        }
+        else if(state == 1){
+          state = 2;
+          document.getElementById('circle1').style.background = "blue";
+          document.getElementById('circle2').style.background = "blue";
+          document.getElementById('circle3').style.background = "blue";
+          document.getElementById('circle4').style.background = "blue";
+          document.getElementById('circle5').style.background = "blue";
+          resettimer();
+        }
+      }
+      function lightson1(){
+        flag = 1;
+        if(state == 1){document.getElementById('circle1').style.background = "red";
+        window.setTimeout(lightson2, 1000);}
+      }
+      function lightson2(){
+        if(state == 1){document.getElementById('circle2').style.background = "red";
+        window.setTimeout(lightson3, 1000);}
+      }
+      function lightson3(){
+        if(state == 1){document.getElementById('circle3').style.background = "red";
+        window.setTimeout(lightson4, 1000);}
+      }
+      function lightson4(){
+        if(state == 1){document.getElementById('circle4').style.background = "red";
+        window.setTimeout(lightson5, 1000);}
+      }
+      function lightson5(){
+        if(state == 1){document.getElementById('circle5').style.background = "red";
+        window.setTimeout(lightsoff, Math.floor((Math.random() * 5000) + 1000));}
+      }
+      function lightsoff(){
+        if(state == 1){state = 0;
+        document.getElementById('circle1').style.background = "green";
+        document.getElementById('circle2').style.background = "green";
+        document.getElementById('circle3').style.background = "green";
+        document.getElementById('circle4').style.background = "green";
+        document.getElementById('circle5').style.background = "green";
+        d1 = new Date();}
+      }
+      function resettimer(){
+
+        if(state == 2){
+          attempt++;
+          document.getElementById('time').innerHTML = "Last attempt: False start (Penalty -> Wait 5 seconds)";
+          document.getElementById('attempts').innerHTML = "Total attempts: "+attempt;
+          window.setTimeout(resetlights, 5000);
+        }
+        else{if(flag == 1){
+          d2 = new Date();
+          d3 = Math.abs(d1 - d2);
+          attempt++;
+          if(d3 < best){
+            best = d3;
+            bestattempt = attempt;
+          }
+          document.getElementById('time').innerHTML = "Last attempt: "+d3+"ms";
+          document.getElementById('besttime').innerHTML = "Best attempt: "+best+"ms (Attempt no. "+bestattempt+")";
+          document.getElementById('attempts').innerHTML = "Total attempts: "+attempt;
+        }
+      window.setTimeout(resetlights, 1000);}
+      }
+      function resetlights(){
+        state = 1;
+        document.getElementById('circle1').style.background = "black";
+        document.getElementById('circle2').style.background = "black";
+        document.getElementById('circle3').style.background = "black";
+        document.getElementById('circle4').style.background = "black";
+        document.getElementById('circle5').style.background = "black";
+        window.setTimeout(lightson1, 1000);
+      }
+    </script>
+  </body>
+</html>
