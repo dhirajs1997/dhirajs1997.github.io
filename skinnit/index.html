@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile skin</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      function changeskin(whichskin, color, colorstripe){
+        // document.getElementById(whichskin).style.background = color;
+        if(color == 'same'){
+          color =  document.getElementById("mobile").style.background;
+          color = color.substring(32,70);
+          color = color.split(", ",1);
+        }
+        if(colorstripe == 'none'){
+          colorstripe = color;
+        }
+        if(color == 'none'){
+          color = colorstripe = 'white';
+        }
+        document.getElementById(whichskin).style.background =  'repeating-linear-gradient(45deg,'+color+','+color+' 10px,'+colorstripe+' 10px,'+colorstripe+' 20px)';
+        // document.getElementById(whichskin).style.backgroundImage = color;
+      }
+
+      function logovisibility(){
+        if(document.getElementById("selectlogo").innerHTML == "LOGO: VISIBLE"){
+          document.getElementById("logo").style.visibility = "hidden";
+          document.getElementById("selectlogo").innerHTML = "LOGO: HIDDEN";
+        }
+        else{
+          document.getElementById("logo").style.visibility = "visible";
+          document.getElementById("selectlogo").innerHTML = "LOGO: VISIBLE";
+        }
+      }
+    </script>
+    <div class="wrapper">
+      <!-- To draw mobile -->
+      <div id="mobile">
+        <div id="lens"><div id="camera"></div></div>
+        <p id="logo">LOGO</p>
+      </div>
+      <div class="skins">
+        <!-- To select back skin -->
+        <div class="skinselect">
+          <button type="button" name="button" id="selectskin">BACK</button>
+          <div class="skinoptions">
+            <button type="button" name="none" onclick="changeskin('mobile','white','none');" style="background-color: white;">none</button>
+            <button type="button" name="red" onclick="changeskin('mobile','tomato','none');"  style="background-color: tomato;">red</button>
+            <button type="button" name="red" onclick="changeskin('mobile','orange','none');"  style="background-color: orange;">orange</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','gold','none');"  style="background-color: gold;">yellow</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','lime','none');"  style="background-color: lime;">green</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','skyblue','none');"  style="background-color: skyblue;">blue</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','teal','none');"  style="background-color: teal;">teal</button>
+          </div>
+        </div>
+        <div class="skinselect">
+          <button type="button" name="button" id="selectskin">STRIPES</button>
+          <div class="skinoptions">
+            <button type="button" name="none" onclick="changeskin('mobile','same','none');" style="background-color: white;">none</button>
+            <button type="button" name="red" onclick="changeskin('mobile','same','tomato');"  style="background-color: tomato;">red</button>
+            <button type="button" name="red" onclick="changeskin('mobile','same','orange');"  style="background-color: orange;">orange</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','same','gold');"  style="background-color: gold;">yellow</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','same','lime');"  style="background-color: lime;">green</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','same','skyblue');"  style="background-color: skyblue;">blue</button>
+            <button type="button" name="blue" onclick="changeskin('mobile','same','teal');"  style="background-color: teal;">teal</button>
+          </div>
+        </div>
+        <!-- To select lens skin -->
+        <div class="skinselect">
+          <button type="button" name="button" id="selectskin">LENS</button>
+          <div class="skinoptions">
+            <button type="button" name="none" onclick="changeskin('lens','white','none');"  style="background-color: white;">none</button>
+            <button type="button" name="red" onclick="changeskin('lens','tomato','none');"  style="background-color: tomato;">red</button>
+            <button type="button" name="red" onclick="changeskin('lens','orange','none');"  style="background-color: orange;">orange</button>
+            <button type="button" name="blue" onclick="changeskin('lens','gold','none');"  style="background-color: gold;">yellow</button>
+            <button type="button" name="blue" onclick="changeskin('lens','lime','none');"  style="background-color: lime;">green</button>
+            <button type="button" name="blue" onclick="changeskin('lens','skyblue','none');"  style="background-color: skyblue;">blue</button>
+            <button type="button" name="blue" onclick="changeskin('lens','teal','none');"  style="background-color: teal;">teal</button>
+          </div>
+        </div>
+        <br>
+        <div class="skinselect">
+          <button type="button" name="button" id="selectlogo" onclick="logovisibility();">LOGO: VISIBLE</button>
+          <!-- <br><br><br><br><br><br><br><br> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

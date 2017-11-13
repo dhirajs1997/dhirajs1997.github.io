@@ -1,0 +1,73 @@
+body{
+  width: 60%;
+  margin: auto;
+  margin-top: 10%;
+  background-color: lightgray;
+}
+
+#mobile p{
+  font-family: Roboto;
+  font-size: 25px;
+  /*position: relative;*/
+  margin-top: 50%;
+  /*margin-left: 30%*/
+  text-align: center;
+  /*top: 50%;*/
+}
+.skins{
+  display: block;
+}
+.wrapper{
+  display: flex;
+}
+
+.skinselect{
+  display: inline-block;
+  margin-left: 100px;;
+}
+.skinoptions{
+  /*display: none;*/
+  visibility: hidden;
+}
+.skinselect:hover .skinoptions{
+  /*display: block;*/
+  visibility: visible;
+  width: auto;
+}
+.skinoptions > button{
+  display: block;
+  border: none;
+  background-color: white;
+  min-width: 100px;
+}
+#mobile {
+  height: 480px;
+  width: 220px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: white;
+  /*background: repeating-linear-gradient(45deg,red,red 10px,blue 10px,blue 20px);*/
+  /*background-image: url("malaysia.jpg");*/
+  /*background-size: cover;*/
+}
+
+#lens {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: solid;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: white;
+}
+
+#camera {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: black;
+}
