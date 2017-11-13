@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Mobile skin</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body onload="document.getElementById('mobile').style.background = 'repeating-linear-gradient(45deg,white,white 10px,white 10px,white 20px)';">
     <script type="text/javascript">
+      var angle, currentangle;
       function changeskin(whichskin, color, colorstripe){
+        if(angle == "" || angle == null){
+          angle = 45;
+      }
+      currentangle = document.getElementById("mobile").style.background;
+      currentangle = currentangle.substring(26,28);
+      if(currentangle >= 0 && currentangle <= 90){
+        angle = currentangle;
+      }
         // document.getElementById(whichskin).style.background = color;
         if(color == 'same'){
           color =  document.getElementById("mobile").style.background;
@@ -20,8 +29,23 @@
         if(color == 'none'){
           color = colorstripe = 'white';
         }
-        document.getElementById(whichskin).style.background =  'repeating-linear-gradient(45deg,'+color+','+color+' 10px,'+colorstripe+' 10px,'+colorstripe+' 20px)';
+        document.getElementById(whichskin).style.background =  'repeating-linear-gradient('+angle+'deg,'+color+','+color+' 10px,'+colorstripe+' 10px,'+colorstripe+' 20px)';
+        color =  document.getElementById("mobile").style.background;
         // document.getElementById(whichskin).style.backgroundImage = color;
+      }
+
+      function changeangle(){
+        var angle = document.getElementById("stripeangle").value;
+        if(angle == ""){
+          angle = 45;
+        }
+        if(angle < 0 || angle > 90){
+          alert("This stripe angle cannot be currently printed\nOnly between 0 degrees and 90 degrees");
+          angle = 45;
+        }
+        color =  document.getElementById("mobile").style.background;
+        color ='repeating-linear-gradient('+angle+'deg,'+color.substring(32);
+        document.getElementById("mobile").style.background =  color;
       }
 
       function logovisibility(){
@@ -34,6 +58,7 @@
           document.getElementById("selectlogo").innerHTML = "LOGO: VISIBLE";
         }
       }
+
     </script>
     <div class="wrapper">
       <!-- To draw mobile -->
@@ -41,6 +66,7 @@
         <div id="lens"><div id="camera"></div></div>
         <p id="logo">LOGO</p>
       </div>
+      <br><br>
       <div class="skins">
         <!-- To select back skin -->
         <div class="skinselect">
@@ -81,6 +107,10 @@
           </div>
         </div>
         <br>
+        <div class="skinselect">
+          <input type="text" id="stripeangle"></input>
+          <button onclick="changeangle()">Stripe Angle</button>
+        </div>
         <div class="skinselect">
           <button type="button" name="button" id="selectlogo" onclick="logovisibility();">LOGO: VISIBLE</button>
           <!-- <br><br><br><br><br><br><br><br> -->
