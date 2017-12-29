@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue input</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+
+    <!-- Vue data is here -->
+    <div id="vue-app">
+      <h1>My age is: {{ age }}</h1>
+      <span>Click  </span>
+      <button v-on:click="add(1)">Add 1 to age</button>
+      <button v-on:click="sub(1)">Sub 1 to age</button>
+      <br>
+      <span>Double click  </span>
+      <button v-on:dblclick="add(10)">Add 10 to age</button>
+      <button v-on:dblclick="sub(10)">Sub 10 ot age</button>
+      <div id="canvas" v-on:mousemove="updateXY">
+        <p>{{x}}{{y}}</p>
+
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
