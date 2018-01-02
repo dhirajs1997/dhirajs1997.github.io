@@ -1,0 +1,29 @@
+#bag{
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(images/yamcha.png) center no-repeat;
+  background-size: 80%;
+}
+
+#bag.burst{
+  background: url(images/yamchaafter.png) center no-repeat;
+  background-size: 170%;
+}
+
+#bag-health{
+  width: 300px;
+  border: 2px solid #000;
+  margin: 0 auto 20px auto;
+}
+
+#bag-health div{
+  height: 20px;
+  background: crimson;
+}
+
+#controls{
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}

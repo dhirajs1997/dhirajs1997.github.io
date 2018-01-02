@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fight Yamcha</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+
+    <div id="vue-app">
+
+      <!-- Bag image -->
+      <div id="bag" v-bind:class="{ burst: ended }">
+
+      </div>
+      <!-- Bag Health -->
+      <div id="bag-health">
+        <div v-bind:style="{ width: health + '%'}"><span style="font-weight: bolder; color: #fff">{{health}}%</span></div>
+      </div>
+      <!-- game controls -->
+      <div id="controls">
+        <button v-on:click="punch" v-show="!ended">Punch</button>
+        <button v-on:click="kick" v-show="!ended">Kick</button>
+        <button v-on:click="sneeze" v-show="!ended">Sneeze</button>
+        <button v-on:click="saibaman" v-show="!ended">Saibaman</button>
+        <button v-on:click="restart">Senzu bean</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
