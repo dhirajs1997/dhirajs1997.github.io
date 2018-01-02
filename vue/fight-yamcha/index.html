@@ -10,13 +10,13 @@
 
     <div id="vue-app">
 
-      <!-- Bag image -->
-      <div id="bag" v-bind:class="{ burst: ended }">
-
-      </div>
+      <div id="bag" v-bind:class="{ burst: ended }"></div>
       <!-- Bag Health -->
       <div id="bag-health">
-        <div v-bind:style="{ width: health + '%'}"><span style="font-weight: bolder; color: #fff">{{health}}%</span></div>
+        <div v-bind:style="{ width: health + '%'}"></div>
+      </div>
+      <div id="hp">
+      <p>{{health}}%</p>
       </div>
       <!-- game controls -->
       <div id="controls">
@@ -24,7 +24,7 @@
         <button v-on:click="kick" v-show="!ended">Kick</button>
         <button v-on:click="sneeze" v-show="!ended">Sneeze</button>
         <button v-on:click="saibaman" v-show="!ended">Saibaman</button>
-        <button v-on:click="restart">Senzu bean</button>
+        <button v-on:click="restart" v-show="ended">Senzu bean</button>
       </div>
     </div>
 
