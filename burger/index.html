@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Burger</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+      function toggle(id) {
+        // alert('animate-'+id);
+        document.getElementById(id).classList.toggle('hidden-'+id);
+        document.getElementById(id).classList.toggle('animate-'+id);
+        }
+    </script>
+  </head>
+  <body>
+    <h2>Custom Burgers for you!</h2>
+    <hr>
+    <div class="burger">
+      <!-- <div id="talkbubble"></div> -->
+      <span id="top-bun" class="hidden-top-bun">&nbsp;</span>
+      <span id="lettuce" class="hidden-lettuce">&nbsp;</span>
+      <span id="sauce" class="hidden-sauce">&nbsp;</span>
+      <span id="cheese" class="hidden-cheese">&nbsp;</span>
+      <span id="patty" class="hidden-patty">&nbsp;</span>
+      <span id="bottom-bun" class="hidden-bottom-bun">&nbsp;</span>
+    </div>
+    <div class="button">
+      <button type="button" name="button" onclick="toggle('top-bun');">top-bun</button>
+      <button type="button" name="button" onclick="toggle('lettuce');">lettuce</button>
+      <button type="button" name="button" onclick="toggle('sauce');">sauce</button>
+      <button type="button" name="button" onclick="toggle('cheese');">cheese</button>
+      <button type="button" name="button" onclick="toggle('patty');">patty</button>
+      <button type="button" name="button" onclick="toggle('bottom-bun');">bottom-bun</button>
+    </div>
+  </body>
+</html>
