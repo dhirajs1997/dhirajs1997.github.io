@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
         crossorigin="anonymous"></script>
+    <script src="portfolioassets/scripts/smooth-scroll.js"></script>
     <title>Document</title>
 </head>
 <style>
@@ -34,6 +35,15 @@
         padding: 0 !important;
         /* height: 100vh; */
     }
+
+    @media (max-width: 1024px) and (orientation: portrait){
+        .hero-body .container{
+            font-size: 40px !important;
+        }
+        #skills, #projects{
+        min-height: 100vh;
+    }
+    }
     .hero{
         height: 100vh;
         padding: 0 5% 0 5%;
@@ -51,16 +61,18 @@
          /* margin: 0 auto; Gives that scrolling effect as the typing happens */
          letter-spacing: .02em; /* Adjust as needed */
          animation: 
-            typing 2s cubic-bezier(.57,.16,0,1) infinite alternate,
+            typing 3s cubic-bezier(.57,.16,0,1) infinite,
             blink-caret .75s step-end infinite;
         animation-fill-mode: both;
-        /* animation-delay: 1s; */
+        animation-delay: 2s;
     }   
 
     /* The typing effect */
     @keyframes typing {
-        from { width: 0% }
-        to { width: 100% }
+        0% { width: 0%; }
+        60% { width: 100%; }
+        85% { width: 100%; }
+        100% { width: 0%; }
     }
 
 
@@ -73,32 +85,97 @@
         margin: 0 auto;
     }
 
+    .mynav{
+        animation: naventry 1s ease-out both;
+        /* top: -1000px; */
+        position: relative;
+    }
+
+    @keyframes naventry {
+        from {top: -200px; }
+        to { top: 0px; }
+    }
+    .slideleft1{
+        position: relative;
+        animation: slidefromleft 0.8s ease-out 0.8s both;
+    }
+    .slideleft2{
+        position: relative;
+        animation: slidefromleft 0.8s ease-out 2.3s both;
+    }
+    .slideright{
+        position: relative;
+        animation: slidefromright 2.3s ease-out 0s both;
+    }
+
+    @keyframes slidefromleft {
+        from {left: -500px; opacity: 0;}
+        to {left: 0px; opacity: 1;}
+    }
+    @keyframes slidefromright {
+        from {left: 10000px; opacity: 0;}
+        to {left: 0px; opacity: 1;}
+    }
+    @keyframes slidefromup {
+        from {top: -40px; opacity: 0;}
+        to {top: 0px; opacity: 1;}
+    }
+    .up1{
+        position: relative;
+        animation: slidefromup 0.3s ease-out 1.45s both;
+    }
+    .up2{
+        position: relative;
+        animation: slidefromup 0.3s ease-out 1.55s both;
+    }
+    .up3{
+        position: relative;
+        animation: slidefromup 0.3s ease-out 1.65s both;
+    }
+    .up4{
+        position: relative;
+        animation: slidefromup 0.3s ease-out 1.75s both;
+    }
+    .up5{
+        position: relative;
+        animation: slidefromup 0.3s ease-out 1.85s both;
+    }
+    .up6{
+        position: relative;
+        animation: slidefromup 0.3s ease-out 1.95s both;
+    }
+    
+
+
+
 </style>
 <body>
-    <section class="hero is-dark nav">
-        <div class="columns is-mobile">
+    <section class="hero nav is-dark">
+        <div class="columns is-mobile mynav">
             <div class="column"></div>
             <div class="columns is-mobile">
 
                 <div class="column has-text-centered">
-                    <a href="#myprojects">Projects</a>
+                    <a data-scroll href="#projects">Projects</a>
                 </div>
                 <div class="column has-text-centered">
-                    <a href="#myskills">Skills</a>
+                    <a data-scroll href="#skills">Skills</a>
                 </div>
             </div>
         </div>
         <section id="intro" class="hero-body">
             <div class="container has-text-justified">
                 <span class="typewriter">
-                <p>Hi, <strong>Dhiraj</strong> here</p>
-                  I am <h1 id="mydescription">a web dev.</h1>
+                   <p><span class="slideleft1">Hi, </span><strong><span class="up1">D</span><span class="up2">H</span><span class="up3">I</span><span class="up4">R</span><span class="up5">A</span><span class="up6">J</span></strong><span class="slideright"> here</span></p>
+                   <span class="slideleft2">
+                       I am <h1 id="mydescription">a web dev.</h1>
+                    </span>
+                </span>
                 </span>
             </div>
         </section>
     </section>
     <div class="container is-fluid has-text-centered is-primary " id="skills">
-        <a name="myskills"></a>
         <h2 class="title">Skills and Technologies</h2>
         <div class="columns is-gapless has-text-centered">
 
@@ -133,7 +210,7 @@
                         <p>JavaScript</p>
                     </div>
                     <div class="column">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma" width="140" height="35" style="padding: 31px 0;">
+                    <img src="portfolioassets/images/bulma-logo.png" alt="Bulma" width="140" height="35" style="padding: 31px 0;">
                         <p>Bulma</p>
                     </div>
                 </div>
@@ -152,7 +229,6 @@
         </div>
     </div>
     <div class="container is-fluid" id="projects">
-        <a name="myprojects"></a>
         <h2 class="has-text-centered title">My Projects</h2>
 
 
@@ -164,7 +240,7 @@
             </header>
             <div class="card-image">
                 <figure class="image is-4by3">
-                    <img src="portfolioassets/images/poster.jpg" alt="test">
+                    <img src="http://via.placeholder.com/400x300" alt="test">
                 </figure>
             </div>
             <div class="card-content">
@@ -191,25 +267,30 @@
 
     </div>
     <script>
+
+        //Initialize smooth scroll
+        var scroll = new SmoothScroll('a[href*="#"]');
         
         //To change my description in about me
         var mydescriptionState = 0;
-        var interval = setInterval(function(){
-            // setTimeout(2000);
-            
-            if(mydescriptionState == 0){
-                document.getElementById("mydescription").innerHTML = "a programmer.";
-                mydescriptionState = 1;
-            }
-            else if(mydescriptionState == 1){
-                document.getElementById("mydescription").innerHTML = "a student.";
-                mydescriptionState = 2;
-            }
-            else if(mydescriptionState == 2){
-                document.getElementById("mydescription").innerHTML = "a web dev.";
-                mydescriptionState = 0;
-            }
-        }, 4000)
+        setTimeout(function(){
+            var interval = setInterval(function () {
+                // setTimeout(2000);
+
+                if (mydescriptionState == 0) {
+                    document.getElementById("mydescription").innerHTML = "a programmer.";
+                    mydescriptionState = 1;
+                }
+                else if (mydescriptionState == 1) {
+                    document.getElementById("mydescription").innerHTML = "a student.";
+                    mydescriptionState = 2;
+                }
+                else if (mydescriptionState == 2) {
+                    document.getElementById("mydescription").innerHTML = "a web dev.";
+                    mydescriptionState = 0;
+                }
+            }, 3000)
+        },2000)
     </script>
 </body>
 </html>
