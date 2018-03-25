@@ -27,8 +27,8 @@
         font-size: 20px;
     }
 
-    .nav a{
-        border: azure solid;
+    .mynav a{
+        border: #3273dc solid;
         padding: 5px 20px;
     }
 
@@ -40,26 +40,30 @@
 
     @media (max-width: 1024px) and (orientation: portrait){
         #logo{
-        margin: 10vh 0 0 20vw;
-    }
+            margin: 10vh 0 0 20vw;
+        }
 
         .hero-body .container{
             font-size: 40px !important;
+            padding-top: 25vh !important;
         }
         #skills, #projects{
-        min-height: 100vh;
+            min-height: 100vh;
+        }
     }
-    }
-    .hero{
+    .navhero{
+        /* position: relative; */
         min-height: 100vh;
         padding: 0 5% 0 5%;
+        background-color:lightgreen;
     }
     .hero-body .container{
-        padding-top: 10vh; 
+        padding-top: 20vh; 
         font-size: 3em;
     }
     .typewriter h1{
-        color: aqua;
+        color: #3273dc;
+        font-weight: 400;
         width: fit-content;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         /* border-right: 0em solid white; The typwriter cursor */
@@ -82,8 +86,21 @@
     }
 
 
-    #skills h2, #projects h2{
+    #skills h2{
         padding-top: 7vh;
+        color: #3273dc;
+    }
+
+    #skills{
+        margin-bottom: 15vh;
+    }
+
+    #projects{
+        background-color: cornflowerblue;
+    }
+    #projects h2{
+        padding-top: 7vh;
+        color: white;
     }
 
     #projects .card{
@@ -159,13 +176,33 @@
         position: relative;
         animation: svgleft 1s linear 1s both;
     }
-    
+
+    .sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    /* border-bottom: black solid; */
+    /* border-top: black solid; */
+    padding: 25px 0 15px 0;
+  }
+
+  .sticky p{
+    font-size: 26px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .footerhero{
+      min-height: 40vh;
+  }
 
 
 
 </style>
 <body>
-    <section class="hero nav is-dark">
+    <section class="hero nav navhero">
         <div class="columns is-mobile mynav">
             <div class="column"></div>
             <div class="columns is-mobile">
@@ -178,7 +215,7 @@
                 </div>
             </div>
         </div>
-        <div id="logo">
+        <!-- <div id="logo">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 
                 <rect x="10" y="10" height="150" width="20" style="fill: rgb(6, 185, 240)">
@@ -210,7 +247,7 @@
                     <animate attributeName="x" attributeType="XML" from="-225" to="10" begin="0s" dur="1.5s" fill="freeze" />
                 </rect>
             </svg>
-        </div>
+        </div> -->
         <section id="intro" class="hero-body">
             <div class="container has-text-justified">
                 <span class="typewriter">
@@ -219,7 +256,7 @@
                        I am <h1 id="mydescription">a web dev.</h1>
                     </span>
                 </span>
-                </span>
+                <!-- </span> -->
             </div>
         </section>
     </section>
@@ -227,24 +264,24 @@
         <h2 class="title">Skills and Technologies</h2>
         <div class="columns is-gapless has-text-centered">
 
-            <div class="column">
+            <!-- <div class="column">
                 <div class="columns is-mobile">
                     <div class="column">
-                        <i class="fab fa-vuejs fa-6x"></i>
+                        <i style="color:#42b883;" class="fab fa-vuejs fa-6x"></i>
                         <p>Vue.js</p>
                     </div>
                     <div class="column">
-                        <i class="fab fa-node fa-6x"></i>
+                        <i style="color:#215732;" class="fab fa-node fa-6x"></i>
                         <p>Node.js</p>
                     </div>
                 </div>
                 <div class="columns is-mobile">
                     <div class="column">
-                        <i class="fab fa-html5 fa-6x"></i>
+                        <i style="color:#e34f26" class="fab fa-html5 fa-6x"></i>
                         <p>HTML</p>
                     </div>
                     <div class="column">
-                        <i class="fab fa-css3-alt fa-6x"></i>
+                        <i style="color:royalblue;" class="fab fa-css3-alt fa-6x"></i>
                         <p>CSS</p>
                     </div>
                 </div>
@@ -254,7 +291,7 @@
             <div class="column">
                 <div class="columns is-mobile">
                     <div class="column">
-                        <i class="fab fa-js fa-6x"></i>
+                        <i style="color:#f7df1e;" class="fab fa-js fa-6x"></i>
                         <p>JavaScript</p>
                     </div>
                     <div class="column">
@@ -264,56 +301,140 @@
                 </div>
                 <div class="columns is-mobile">
                     <div class="column">
-                        <i class="fab fa-php fa-6x"></i>
+                        <i style="color:#8892be;" class="fab fa-php fa-6x"></i>
                         <p>PHP</p>
                     </div>
                     <div class="column">
-                        <i class="fas fa-database fa-6x"></i>
+                        <i style="color:#f29111;" class="fas fa-database fa-6x"></i>
                         <p>MySQL</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
+        <!-- </div> -->
+        <div class="column">
+            <div class="columns is-mobile">
+                <div class="column">
+                    <i class="fab fa-vuejs fa-6x"></i>
+                    <p>Vue.js</p>
+                </div>
+                <div class="column">
+                    <i class="fab fa-node fa-6x"></i>
+                    <p>Node.js</p>
+                </div>
+            </div>
+            <div class="columns is-mobile">
+                <div class="column">
+                    <i class="fab fa-html5 fa-6x"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="column">
+                    <i class="fab fa-css3-alt fa-6x"></i>
+                    <p>CSS</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="column">
+            <div class="columns is-mobile">
+                <div class="column">
+                    <i class="fab fa-js fa-6x"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="column">
+                    <img src="portfolioassets/images/bulma-logo-bw.png" alt="Bulma" width="140" height="35" style="padding: 31px 0;">
+                    <p>Bulma</p>
+                </div>
+            </div>
+            <div class="columns is-mobile">
+                <div class="column">
+                    <i class="fab fa-php fa-6x"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-database fa-6x"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+        
         </div>
     </div>
-    <div class="container is-fluid" id="projects">
-        <h2 class="has-text-centered title">My Projects</h2>
+    <div class="" id="projects">
+        <h2 class="has-text-centered title">My Projects(Building this section)</h2>
 
 
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title is-centered">
-                    NFCash (Group Project)
-                </p>
-            </header>
-            <div class="card-image">
-                <figure class="image is-4by3">
+        <div class="flagcontent" style="background-color: cornflowerblue;">
+            <div class="sticky" style="background-color:cornflowerblue;">
+                <p class="has-text-centered">NFCash (Group Project)</p>
+            </div>
+            <div class="container is-fluid has-text-centered">
+                <figure class="">
                     <img src="http://via.placeholder.com/400x300" alt="test">
                 </figure>
             </div>
             <div class="card-content">
                 <div class="content description">
-                     A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino.
-                     A webpage was built using PHP and MySQL
-                     to allow the user to order food on his computer or mobile.
-                     Also a simple android app to scan NFC UID was built
-                      to show how NFC works.
+                    A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino. A webpage was built
+                    using PHP and MySQL to allow the user to order food on his computer or mobile. Also a simple android app to scan
+                    NFC UID was built to show how NFC works.
                 </div>
                 <div class="content whatILearned">
-                    I built the android app to scan NFC card's UID. I also helped in testing and debugging
-                     code for Arduino, Raspberry PI, and the website. I learned about android app building process,
-                     responsive web design, how to securely store data such as passwords in a database, and a bit about
-                     how Arduino and Raspberry PI work.
+                    I built the android app to scan NFC card's UID. I also helped in testing and debugging code for Arduino, Raspberry PI, and
+                    the website. I learned about android app building process, responsive web design, how to securely store data such
+                    as passwords in a database, and a bit about how Arduino and Raspberry PI work.
                 </div>
             </div>
-            <div class="card-footer">
+            <!-- <hr> -->
+            <!-- <div class="card-footer">
                 <a href="#" class="card-footer-item">View code</a>
                 <a href="#" class="card-footer-item">View demo</a>
+            </div> -->
+            
+        </div>
+        
+        
+        <div class="flagcontent" style="background-color: cornflowerblue;">
+            <div class="sticky" style="background-color:cornflowerblue;">
+                <p class="has-text-centered">NFCash (Group Project)</p>
             </div>
+            <div class="container is-fluid has-text-centered">
+                <figure class="">
+                    <img src="http://via.placeholder.com/400x300" alt="test">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="content description">
+                    A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino. A webpage was built
+                    using PHP and MySQL to allow the user to order food on his computer or mobile. Also a simple android app to scan
+                    NFC UID was built to show how NFC works.
+                </div>
+                <div class="content whatILearned">
+                    I built the android app to scan NFC card's UID. I also helped in testing and debugging code for Arduino, Raspberry PI, and
+                    the website. I learned about android app building process, responsive web design, how to securely store data
+                    such as passwords in a database, and a bit about how Arduino and Raspberry PI work.
+                </div>
+            </div>
+            <!-- <div class="card-footer">
+                        <a href="#" class="card-footer-item">View code</a>
+                        <a href="#" class="card-footer-item">View demo</a>
+                    </div> -->
+        
         </div>
 
 
     </div>
+
+
+    <section class="hero is-warning footerhero">
+    
+    <div class="has-text-centered">
+        <p>footer available soon</p>
+    </div>
+    
+    </section>
+
     <script>
 
         //Initialize smooth scroll
