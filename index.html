@@ -52,7 +52,7 @@
         }
     }
     .navhero{
-        /* position: relative; */
+        position: relative;
         min-height: 100vh;
         padding: 0 5% 0 5%;
         background-color:lightgreen;
@@ -96,7 +96,7 @@
     }
 
     #projects{
-        background-color: cornflowerblue;
+        background-color: #209cee;
     }
     #projects h2{
         padding-top: 7vh;
@@ -195,7 +195,7 @@
   }
 
   .footerhero{
-      min-height: 40vh;
+      min-height: 50vh;
   }
 
   .columns{
@@ -208,8 +208,34 @@
           margin-right: -0.75 rem;
           margin-top: -0.75 rem;
       }
+
+      .arrow-container:hover i{
+        border-width: 0 7px 7px 0;
+        padding: 15px;
+    }
   }
 
+    i {
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 10px;
+        transition-duration: 0.3s;
+    }
+    .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+    .arrow-container{
+        position: absolute;
+        bottom: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projwhatILearned, .projdescription{
+        color: black;
+    }
 
 
 </style>
@@ -271,6 +297,11 @@
                 <!-- </span> -->
             </div>
         </section>
+        <div class="arrow-container">
+            <p>
+                <a href="#skills"><i class="arrow down"></i></a>
+            </p>
+        </div>
     </section>
     <div class="container is-fluid has-text-centered is-primary " id="skills">
         <h2 class="title">Skills and Technologies</h2>
@@ -377,22 +408,22 @@
         <h2 class="has-text-centered title">My Projects(Building this section)</h2>
 
 
-        <div class="flagcontent" style="background-color: cornflowerblue;">
-            <div class="sticky" style="background-color:cornflowerblue;">
+        <div class="flagcontent" style="background-color: #209cee;">
+            <div class="sticky" style="background-color:#209cee;">
                 <p class="has-text-centered">NFCash (Group Project)</p>
             </div>
             <div class="container is-fluid has-text-centered">
                 <figure class="">
-                    <img src="http://via.placeholder.com/400x300" alt="test">
+                    <img src="http://via.placeholder.com/360x270" alt="test">
                 </figure>
             </div>
-            <div class="card-content">
-                <div class="content description">
+            <div class="content container is-fluid">
+                <div class="content projdescription">
                     A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino. A webpage was built
                     using PHP and MySQL to allow the user to order food on his computer or mobile. Also a simple android app to scan
                     NFC UID was built to show how NFC works.
                 </div>
-                <div class="content whatILearned">
+                <div class="content projwhatILearned">
                     I built the android app to scan NFC card's UID. I also helped in testing and debugging code for Arduino, Raspberry PI, and
                     the website. I learned about android app building process, responsive web design, how to securely store data such
                     as passwords in a database, and a bit about how Arduino and Raspberry PI work.
@@ -407,25 +438,25 @@
         </div>
         
         
-        <div class="flagcontent" style="background-color: cornflowerblue;">
-            <div class="sticky" style="background-color:cornflowerblue;">
-                <p class="has-text-centered">NFCash (Group Project)</p>
+        <div class="flagcontent" style="background-color: #209cee;">
+            <div class="sticky" style="background-color:#209cee;">
+                <p class="has-text-centered">BroTorrent</p>
             </div>
             <div class="container is-fluid has-text-centered">
                 <figure class="">
-                    <img src="http://via.placeholder.com/400x300" alt="test">
+                    <img src="./portfolioassets/images/brotorrent-crop.jpeg" alt="test" height="270" width="360">
                 </figure>
             </div>
             <div class="card-content">
                 <div class="content description">
-                    A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino. A webpage was built
-                    using PHP and MySQL to allow the user to order food on his computer or mobile. Also a simple android app to scan
-                    NFC UID was built to show how NFC works.
+                    A browser based torrent downloader built on Vue.js using WebTorrent package.
+                    It downloads webRTC based torrents and stores it in browser blobs. 
                 </div>
                 <div class="content whatILearned">
-                    I built the android app to scan NFC card's UID. I also helped in testing and debugging code for Arduino, Raspberry PI, and
-                    the website. I learned about android app building process, responsive web design, how to securely store data
-                    such as passwords in a database, and a bit about how Arduino and Raspberry PI work.
+                    <div class="buttonwrap has-text-centered">
+                        <a class="button is-danger" href="https://github.com/dhirajs1997/BrowserTorrent" target="_blank">Code</a>
+                        <a class="button is-danger" href="https://dhirajs1997.github.io/brotorrent" target="_blank">Demo</a>
+                    </div>
                 </div>
             </div>
             <!-- <div class="card-footer">
@@ -439,7 +470,7 @@
     </div>
 
 
-    <section class="hero is-warning footerhero">
+    <section class="hero footerhero">
     
     <div class="has-text-centered">
         <p>footer available soon</p>
@@ -451,6 +482,7 @@
 
         //Initialize smooth scroll
         var scroll = new SmoothScroll('a[href*="#"]');
+        // var scroll = new SmoothScroll('a[href*="projects"],[href*="skills"]');
         
         //To change my description in about me
         var mydescriptionState = 0;
@@ -471,7 +503,8 @@
                     mydescriptionState = 0;
                 }
             }, 3000)
-        },2000)
+        },2000);
     </script>
+    
 </body>
 </html>
