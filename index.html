@@ -22,6 +22,9 @@
         font-size: 1.5em;
     } */
 
+    a{
+        color: inherit;
+    }
     .nav .columns{
         padding-top: 5vh;
         font-size: 20px;
@@ -97,6 +100,7 @@
 
     #projects{
         background-color: #209cee;
+        color: white !important;
     }
     #projects h2{
         padding-top: 7vh;
@@ -106,6 +110,11 @@
     #projects .card{
         width: 80%;
         margin: 0 auto;
+        /* color: white; */
+    }
+
+    #projects .card-content {
+        font-size: 1.25rem;
     }
 
     .mynav{
@@ -235,6 +244,10 @@
     }
     .projwhatILearned, .projdescription{
         color: black;
+    }
+
+    .footer{
+        padding-bottom: 58px !important;
     }
 
 
@@ -417,18 +430,19 @@
                     <img src="http://via.placeholder.com/360x270" alt="test">
                 </figure>
             </div>
-            <div class="content container is-fluid">
-                <div class="content projdescription">
-                    A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino. A webpage was built
-                    using PHP and MySQL to allow the user to order food on his computer or mobile. Also a simple android app to scan
-                    NFC UID was built to show how NFC works.
+            <div class="card-content container is-fluid">
+                <div class="content description">
+                     A cashless payment system using NFC, made for college canteen. Built using Raspberry PI and Arduino. A webpage was built
+                    using PHP and MySQL to allow the user to order food on his computer or mobile. Also a simple android app to scan NFC UID
+                    was built to show how NFC works.
                 </div>
-                <div class="content projwhatILearned">
+            </div>
+            
+                <!-- <div class="content projwhatILearned  container is-fluid">
                     I built the android app to scan NFC card's UID. I also helped in testing and debugging code for Arduino, Raspberry PI, and
                     the website. I learned about android app building process, responsive web design, how to securely store data such
                     as passwords in a database, and a bit about how Arduino and Raspberry PI work.
-                </div>
-            </div>
+                </div> -->
             <!-- <hr> -->
             <!-- <div class="card-footer">
                 <a href="#" class="card-footer-item">View code</a>
@@ -447,7 +461,7 @@
                     <img src="./portfolioassets/images/brotorrent-crop.jpeg" alt="test" height="270" width="360">
                 </figure>
             </div>
-            <div class="card-content">
+            <div class="card-content container is-fluid">
                 <div class="content description">
                     A browser based torrent downloader built on Vue.js using WebTorrent package.
                     It downloads webRTC based torrents and stores it in browser blobs. 
@@ -467,16 +481,72 @@
         </div>
 
 
+
+        <div class="flagcontent" style="background-color: #209cee;">
+            <div class="sticky" style="background-color:#209cee;">
+                <p class="has-text-centered">Wildlife Sanctuary</p>
+            </div>
+            <div class="container is-fluid has-text-centered">
+                <figure class="">
+                    <img src="http://via.placeholder.com/360x270" alt="test" height="270" width="360">
+                </figure>
+            </div>
+            <div class="card-content container is-fluid">
+                <div class="content description">
+                   A website built for a wildlife sanctuary. Uses Node.js backend with Oracle database. One can reserve tickets, see the park description, and view the activities available in the park.
+                </div>
+                <div class="content whatILearned">
+                    <div class="buttonwrap has-text-centered">
+                        <a class="button is-danger" href="https://github.com/dhirajs1997/Projects/tree/master/Wildlife%20Sanctuary" target="_blank">Code</a>
+                        <a class="button is-danger" href="#" target="_blank">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="card-footer">
+                                <a href="#" class="card-footer-item">View code</a>
+                                <a href="#" class="card-footer-item">View demo</a>
+                            </div> -->
+        
+        </div>
+
+
+
+
+
+
     </div>
 
 
-    <section class="hero footerhero">
-    
-    <div class="has-text-centered">
-        <p>footer available soon</p>
-    </div>
-    
-    </section>
+    <footer class="footer">
+        <div class="container has-text-centered">
+            <h2 style="font-size: 1.5rem !important; font-weight: bolder;">Contact me on</h2>
+            <div class="columns" style="margin: 5vh 0;">
+
+                <div class="column has-text-centered">
+                    <div>
+                        <span>
+                            <a href="https://github.com/dhirajs1997" target="_blank">
+                                <i class="fab fa-github fa-2x" style="vertical-align: middle;"></i> &nbsp;Github
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column has-text-centered">
+                    <div>
+                        <span>
+                            <a href="mailto:dhirajsajnani1997@gmail.com?subject=Via%20portfolio">
+                                <i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i> &nbsp;Mail
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2>&copy; Dhiraj Sajnani 2018</h2>
+        </div>
+    </footer>
 
     <script>
 
