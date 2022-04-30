@@ -41,12 +41,12 @@
 
 
 
-    <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'></a-scene>
+    <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         <a-marker type='barcode' value='4'>
             <a-text value="Hello, World!"></a-text>
         </a-marker>
-      </a-scene>
-
+        <a-entity camera></a-entity>
+    </a-scene>
 
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
