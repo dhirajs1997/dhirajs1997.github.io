@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=600">
+    <title>Document</title>
+    <style>
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .space {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .laptop {
+            padding: 20px;
+            z-index: 1;
+            transform-origin: center 15%;
+        }
+
+        .only-front-visible {
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        .laptop-zoom {
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-name: animate-laptop-zoom;
+        }
+
+        .border {
+            border: 1px solid #777;
+        }
+
+        .slab {
+            position: relative;
+            height: 226px;
+            width: 340px;
+            padding: 10px 10px 16px 10px;
+            border-radius: 15px;
+        }
+
+        #top {
+            background-color: #eee;
+            z-index: 10;
+            transform-origin: bottom center;
+            transform-style: preserve-3d;
+            transform: perspective(1000px) rotateX(-120deg);
+            transition: transform 2s 0s;
+        }
+
+        .open-top {
+            transform: perspective(1000px) rotateX(0deg) !important;
+            /* animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-name: animate-open-top;
+            animation-timing-function: linear; */
+            /* animation-timeline: view(); */
+            /* animation-range: cover 60% cover 70%; */
+        }
+
+        /* @keyframes animate-open-top {
+
+            0% {
+                transform: perspective(1000px) rotateX(-120deg);
+            }
+
+            24.9% {
+                background-color: #eee;
+            }
+
+            25% {
+                background-color: #555;
+            }
+
+            100% {
+                transform: perspective(1000px) rotateX(0deg);
+                background-color: #555;
+            }
+        }
+
+        @keyframes animate-laptop-zoom {
+
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(5);
+                opacity: 0;
+            }
+        } */
+
+        .camera {
+            position: absolute;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            top: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ccc;
+        }
+
+        .display {
+            background-color: #fff;
+            height: 100%;
+            width: 100%;
+            border-radius: 2px;
+        }
+
+        #base {
+            background-color: #eee;
+            z-index: 1;
+            transform: perspective(1000px) rotateX(60deg);
+            transition: transform 2s;
+            transform-origin: top center;
+        }
+
+        .keyboard {
+            background-color: #ccc;
+            height: 60%;
+            width: 90%;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+
+        .trackpad {
+            background-color: #ccc;
+            height: 30%;
+            width: 50%;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="buttons">
+        <button style="width: 200px; height: 100px" onclick="toggleOpenAnim()">Open</button>
+    </div>
+    <div class="space">
+        <div class='laptop'>
+            <div id="top" class="slab border">
+                <div class="camera only-front-visible border"></div>
+                <div class="display only-front-visible border"></div>
+            </div>
+            <div id="base" class="slab border">
+                <div class="keyboard border"></div>
+                <div class="trackpad border"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="space">
+        Sample text
+    </div> -->
+
+    <script>
+        const laptopDisplay = document.getElementById('top');
+        // const base = document.getElementById('base');
+        // base.onmouseenter = () => {
+        // setTimeout(() => {
+
+        //     laptopDisplay.classList.add('open-top');
+        // }, 1000);
+        // }
+        function toggleOpenAnim() {
+            laptopDisplay.classList.toggle('open-top');
+        }
+    </script>
+</body>
+
+</html>
